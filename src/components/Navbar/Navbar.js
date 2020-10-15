@@ -37,7 +37,6 @@ function App() {
         </nav>
         <div>
         { sideBarOpen ? <Sidebar /> : ""} 
-        {/* <Sidebar />   */}
         
         </div>
     </div>
