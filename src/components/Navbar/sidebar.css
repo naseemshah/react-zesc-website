@@ -1,0 +1,35 @@
+.sideBar{
+    margin: 0;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 50px 20px;
+}
+
+.sideBarHead{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+}
+
+.sideBar .nav-links-container{
+    margin-top: 10px;
+}
+
+.sideBar .nav-links{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transform-origin: left;
+}
+
+.sideBar .nav-links a{
+    text-decoration: none;
+    color: black;    
+}
