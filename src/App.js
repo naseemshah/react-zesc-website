@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from './components/Navbar/Navbar';
-import HeroSection from './components/HeroSection/HeroSection'
-import StatsSection from './components/StatsSecition/StatsSection'
+import HeroSection from './components/HeroSection/HeroSection';
+import StatsSection from './components/StatsSecition/StatsSection';
+import CoreFeaturesSection from './components/coreFeaturesSection/coreFeaturesSection';
 import './App.css';
 
 
@@ -12,6 +13,7 @@ function App() {
         <NavBar />
         <HeroSection />
         <StatsSection />
+        <CoreFeaturesSection />
       </header>
     </div>
   );
