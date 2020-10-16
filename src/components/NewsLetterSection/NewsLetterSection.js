@@ -3,10 +3,11 @@ import './Newsletter.css';
 import underlineIcon from "./underline.svg";
 import rectPat from './rect-pat.svg'
 
+
 function NewsletterSection() {
 
   return (
-        <section id="NewsletterSection">
+        <section id="NewsletterSection" className="lax" data-lax-preset="fadeIn">
             <div className="news-heading-container">
                 <h1>Subscribe Newsletter</h1>
                 <img src={underlineIcon} alt=''></img>

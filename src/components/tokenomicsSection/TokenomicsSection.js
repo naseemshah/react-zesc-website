@@ -83,8 +83,10 @@ function TokenomicsSection() {
                 transition={{ delay:1.2, duration: 1}}
                 src={rectPat} alt="">
                 </img>
-                <h1>Tokenomics</h1>
-                <img src={underlineIcon} alt=''></img>
+                <div  className="lax" data-lax-preset="fadeIn">
+                    <h1>Tokenomics</h1>
+                    <img src={underlineIcon} alt=''></img>
+                </div>
             </div>
             <div className="tokenomics-container">
                 <div className="tokenomics-chart">
@@ -97,7 +99,7 @@ function TokenomicsSection() {
                         height={200}
                     />
                     <div className="chart-logo"><img src={chartLogo} alt=""></img></div>
-                    <div className="chart-total">
+                    <div className="chart-total" >
                         <p>Total Supply 40,000</p>
                         <p>Max. Supply 40,000</p>                        
                     </div>
