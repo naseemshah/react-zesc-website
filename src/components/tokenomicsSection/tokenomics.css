@@ -1,0 +1,64 @@
+#tokenomics-section{
+    margin-top: 50px;
+}
+
+#tokenomics-section .tokenomics-heading-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+
+#tokenomics-section .tokenomics-heading-container img{
+    margin-top: -20px;
+    margin-left: -100px;
+    width: 94;
+    padding: 0;
+}
+
+.tokenomics-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 30px;
+    color: white;
+}
+
+.tokenomics-container > div{
+    margin: 0 10px;
+}
+.chart-logo{
+    position: relative;
+    bottom: 140px;
+
+}
+
+.chart-total{
+    display: flex;
+}
+
+.chart-total p{
+    margin: 0px 0px 0 10px;
+}
+.tokenomics-chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tokenomics-legends li{
+    list-style: none;
+}
+
+.tokenomics-legends li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #49FFC7; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
