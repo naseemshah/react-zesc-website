@@ -25,7 +25,7 @@ function Sidebar(props) {
             <motion.div className="sideBar"
                 
                 initial={{ position: "fixed", zindex: 100, x: '100vw'}}
-                animate={{ position: "fixed",zindex: 100, x: '0'}}
+                animate={{ position: "fixed", zindex: 100, x: '0'}}
                 transition={{delay: 0.5, duration: 0.5}}
                 exit={{ opacity: 0 }}
             >

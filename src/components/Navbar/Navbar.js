@@ -20,7 +20,7 @@ function Navbar() {
         { 
             sideBarOpen &&
             
-                <motion.div  key="sidebar" transition={{delay: 0, duration: 0.5}} exit={{ zindex: 100 , position:"fixed", x: "100vw" }}>
+                <motion.div  key="sidebar" transition={{delay: 0, duration: 0.5}} exit={{ opacity: 0 }}>
                     <Sidebar
                         SidebarStates = {{sideBarOpen, setsideBarOpen}} 
                     />

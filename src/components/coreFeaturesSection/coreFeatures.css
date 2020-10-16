@@ -9,6 +9,7 @@
     grid-row-gap: 20px;
     padding: 20px 50px;
     box-sizing: border-box;
+    z-index: 0;
 }
 
 #coreFeaturesSection .feature-container h2{
