@@ -24,8 +24,8 @@ function Sidebar(props) {
         <AnimatePresence>
             <motion.div className="sideBar"
                 
-                initial={{x: '100vw'}}
-                animate={{x: '0'}}
+                initial={{ position: "fixed", zindex: 100, x: '100vw'}}
+                animate={{ position: "fixed",zindex: 100, x: '0'}}
                 transition={{delay: 0.5, duration: 0.5}}
                 exit={{ opacity: 0 }}
             >

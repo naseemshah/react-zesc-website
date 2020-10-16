@@ -9,7 +9,7 @@
     height: 100vh;
     overflow: hidden;
     padding: 50px 20px;
-    z-index: 100;
+    z-index: 100!important;
 }
 
 .sideBarHead{

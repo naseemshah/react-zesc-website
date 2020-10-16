@@ -15,9 +15,23 @@ function Navbar() {
     }
   return (
     <div>
+        <div>
+        <AnimatePresence>
+        { 
+            sideBarOpen &&
+            
+                <motion.div  key="sidebar" transition={{delay: 0, duration: 0.5}} exit={{ zindex: 100 , position:"fixed", x: "100vw" }}>
+                    <Sidebar
+                        SidebarStates = {{sideBarOpen, setsideBarOpen}} 
+                    />
+                </motion.div>
+            
+        }
+        </AnimatePresence> 
+        
+        </div>
 
-
-            <div className="NavContainer">
+        <div className="NavContainer">
 
             <nav className="navbar">
                 
@@ -41,21 +55,7 @@ function Navbar() {
             </nav>
             
         </div>
-        <div>
-        <AnimatePresence>
-        { 
-            sideBarOpen &&
-            
-                <motion.div  key="sidebar" transition={{delay: 0, duration: 0.5}} exit={{ position:"fixed", x: "100vw" }}>
-                    <Sidebar
-                        SidebarStates = {{sideBarOpen, setsideBarOpen}} 
-                    />
-                </motion.div>
-            
-        }
-        </AnimatePresence> 
         
-        </div>
     </div>
 
   );
