@@ -98,5 +98,10 @@
         align-items: center;
         justify-content: center;
     }
+    .chart-logo{
+        position: relative;
+        bottom: 135px;
+        z-index: -100;    
+    }
     
 }
