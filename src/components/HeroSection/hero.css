@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     padding: 90px 20px 20px 20px;
     color: white;
@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 768px) {
     #HeroSection{
-        padding-top: 70px;
+        padding-top: 90px;
     }
     #HeroSection h1{
         font-size: 18px;

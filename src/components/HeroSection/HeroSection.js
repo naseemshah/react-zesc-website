@@ -25,12 +25,18 @@ function Navbar() {
             combining yield farming,staking with deflationary
             components in a DEFI ecosystem.
             </motion.h1>
+            <motion.p
+                initial={{opacity: 0, y: 50}}
+                animate={{opacity: 1, y: 0}}
+                transition={{ delay:1.2, duration: 1}}
+            >
+                Purchasing real world products, collectibles, game skins
+            </motion.p>
             <motion.div className="heroSectionDescContainer"
                 initial={{opacity: 0, y: 50}}
                 animate={{opacity: 1, y: 0}}
                 transition={{ delay:1.2, duration: 1}}
             >
-                <p>Purchasing real world products, collectibles, game skins</p>
                 <div className="heroSectionButtonContainer">
                     <button>Uniswap</button>
                     <button>Community</button>

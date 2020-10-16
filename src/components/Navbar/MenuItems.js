@@ -10,19 +10,15 @@ let menuItems = [
         cName: "nav-links"
     },
     {
-        title: "Page 1",
+        title: "Whitepaper",
         url: "#",
         cName: "nav-links"
     },{
-        title: "Page 2",
+        title: "Stake",
         url: "#",
         cName: "nav-links"
     },
-    {
-        title: "Page 3",
-        url: "#",
-        cName: "nav-links"
-    }
+    
 ]
 
 export default menuItems;
