@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     margin: 50px;
-    padding: 30px;
+    /* padding: 20px; */
     color: white;
 }
 
@@ -32,16 +32,22 @@
 }
 .chart-logo{
     position: relative;
-    bottom: 140px;
+    bottom: 150px;
 
+}
+
+.tokenomics-chart .chart-total{
+    display: flex;
+
+}
+
+.chart-total p{
+    
+    margin: -50px 10px 0 10px;
 }
 
 .chart-total{
     display: flex;
-}
-
-.chart-total p{
-    margin: 0px 0px 0 10px;
 }
 .tokenomics-chart{
     display: flex;
@@ -50,15 +56,46 @@
     align-items: center;
 }
 
+.tokenomics-legends ul{
+    display: flex;
+    flex-direction: column;
+
+}
 .tokenomics-legends li{
     list-style: none;
+    
 }
 
-.tokenomics-legends li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #49FFC7; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
+
+  @media screen and (max-width: 768px) {
+    .tokenomics-container{
+        flex-direction: column;
+    }
+    .tokenomics-legends ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 550px) {
+    .chart-total{
+        margin-top: 15px;
+        flex-direction: column;
+    }
+   
+    .tokenomics-legends ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

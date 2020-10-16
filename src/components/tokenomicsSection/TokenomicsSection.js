@@ -10,7 +10,7 @@ function TokenomicsSection() {
     let data = [
         {
             title: "Token Sale",
-            value: 25
+            value: 25,
         },
         {
             title: "Marketing",
@@ -36,6 +36,9 @@ function TokenomicsSection() {
     //Generated from data
     let dataValues = []
     let dataLables = []
+    let colors = ['#00C689c9','#00C689c9','#2CE2AAc9','#46EBB8c9','#49FFC7c9','#79FFD6c9','#46EBB8'];
+    let colorsHover = ['#00C689','#2CE2AA','#46EBB8','#49FFC7','#79FFD6','#46EBB8'];
+
     data.forEach(item =>{
         dataValues.push(item.value);
         dataLables.push(item.title);
@@ -56,23 +59,8 @@ function TokenomicsSection() {
                 },
                 
                 borderWidth: 0,
-                backgroundColor: [
-                    '#00C689c9',
-                    '#2CE2AAc9',
-                    '#46EBB8c9',
-                    '#49FFC7c9',
-                    '#79FFD6c9',
-                    '#46EBB8'
-
-                    ],
-                    hoverBackgroundColor: [
-                        '#00C689',
-                        '#2CE2AA',
-                        '#46EBB8',
-                        '#49FFC7',
-                        '#79FFD6',
-                        '#46EBB8'
-                    ]
+                backgroundColor: [...colors],
+                    hoverBackgroundColor: [...colorsHover]
             }
         ]
     }
@@ -102,7 +90,12 @@ function TokenomicsSection() {
                     {
                         data.map((item,id)=>{
                             return (
-                            <li key={id}>{item.value + '% ' + item.title}</li>
+                            <div style={{display: 'flex', alignContent: 'center'}}>
+                                <div style={{width:10, height:10, backgroundColor: colors[id], margin: '10px'}}></div>
+                                <li key={id}>
+                                    {item.value + '% ' + item.title}
+                                </li>
+                            </div>
                             )
                         })
                     }
