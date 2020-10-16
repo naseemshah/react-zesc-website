@@ -5,6 +5,9 @@
     height: 80px;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #0D454A;
 
 }
 
