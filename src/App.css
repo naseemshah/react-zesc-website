@@ -14,3 +14,7 @@ body section{
   margin-right: auto;
   max-width: 1000px;
 }
+
+h1{
+  font-weight: normal;
+}
