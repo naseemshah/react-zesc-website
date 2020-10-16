@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 import StatsSection from './components/StatsSecition/StatsSection';
 import CoreFeaturesSection from './components/coreFeaturesSection/coreFeaturesSection';
 import TokenomicsSection from './components/tokenomicsSection/TokenomicsSection'
+import NewsletterSection from './components/NewsLetterSection/NewsLetterSection'
 import './App.css';
 
 
@@ -17,6 +18,7 @@ function App() {
       <StatsSection />
       <CoreFeaturesSection />
       <TokenomicsSection />
+      <NewsletterSection />
     </div>
   );
 }
