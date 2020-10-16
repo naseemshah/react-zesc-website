@@ -69,8 +69,7 @@
 
 .rectPat1{
     position: relative;
-    margin-left: -500px;
-    margin-top: -10px;
+    left: -400px;
     top: 50px;
 }
 
@@ -137,6 +136,10 @@
         line-height: 25px;
         max-width: 95%;
     }
+    .rectPat2{
+        display: none;
+    }
+    
     #HeroSection p{
         font-size: 11px;
     }

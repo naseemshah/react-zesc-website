@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import './stats.css';
 
 function statsSection() {
@@ -21,7 +22,12 @@ function statsSection() {
     ]
 
   return (
-        <section id="statsSection" className="lax" data-lax-opacity="1 0, (0.5*vh) 1">
+        <motion.section 
+        id="statsSection"
+        initial={{opacity: 0, y: 50}}
+        animate={{opacity: 1, y: 0}}
+        transition={{ delay:1.2, duration: 1}}
+        >
             <div className="prices-container">
                 {PricesItems.map((item,id) =>{
                     return (
@@ -36,7 +42,7 @@ function statsSection() {
             </div>
             
             
-        </section>
+        </motion.section>
   );
 }
 
