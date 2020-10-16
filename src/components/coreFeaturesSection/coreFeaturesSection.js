@@ -1,5 +1,6 @@
 import React from 'react';
 import './coreFeatures.css';
+import underlineIcon from "./underline.svg";
 
 
 function CoreFeaturesSection() {
@@ -31,14 +32,15 @@ function CoreFeaturesSection() {
         <section id="coreFeaturesSection">
             <div className="core-features-heading-container">
                 <h1>Core Features</h1>
+                <img src={underlineIcon} alt=''></img>
             </div>
             <div className="core-features-contents">
                 {
                     contents.map((item,id)=>{
                         return (
-                            <div key={id}>
+                            <div className="feature-container" key={id}>
                                 <img src={item.icon} alt={item.title}></img>
-                                <h1>{item.title}</h1>
+                                <p>{item.title}</p>
                                 <p>{item.desc}</p>
                             </div>
                         )
