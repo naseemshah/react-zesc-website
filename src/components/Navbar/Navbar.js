@@ -3,6 +3,7 @@ import logo from '../../logo.svg';
 import sidebarBtn from './sidebarbtn.svg';
 import menuItems from './MenuItems';
 import Sidebar from './Sidebar';
+import { motion, AnimatePresence } from "framer-motion";
 import './navbar.css';
 
 
@@ -24,7 +25,7 @@ function App() {
                 <ul>
                     { menuItems.map((item)=>{
                         return(
-                        <li className={item.cName}><a  href={item.url}>{item.title}</a></li>
+                        <li key={item.title} className={item.cName}><a  href={item.url}>{item.title}</a></li>
                         )
                         })
                     }
@@ -36,7 +37,18 @@ function App() {
             
         </nav>
         <div>
-        { sideBarOpen ? <Sidebar /> : ""} 
+        <AnimatePresence>
+        { 
+            sideBarOpen &&
+            
+                <motion.div  key="sidebar" transition={{delay: 0, duration: 0.5}} exit={{ x: "100vw" }}>
+                    <Sidebar
+                        SidebarStates = {{sideBarOpen, setsideBarOpen}} 
+                    />
+                </motion.div>
+            
+        }
+        </AnimatePresence> 
         
         </div>
     </div>
