@@ -90,7 +90,7 @@ function TokenomicsSection() {
                     {
                         data.map((item,id)=>{
                             return (
-                            <div style={{display: 'flex', alignContent: 'center'}}>
+                            <div key={id} style={{display: 'flex', alignContent: 'center'}}>
                                 <div style={{width:10, height:10, backgroundColor: colors[id], margin: '10px'}}></div>
                                 <li key={id}>
                                     {item.value + '% ' + item.title}
