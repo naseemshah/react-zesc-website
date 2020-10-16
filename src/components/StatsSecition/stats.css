@@ -1,0 +1,67 @@
+#statsSection{
+    padding: 50px;
+}
+
+
+#statsSection .prices-container{
+    padding: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+#statsSection .prices-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    
+    
+}
+
+#statsSection .prices-dollar{
+    color: #00C689;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    #statsSection .prices-container div h1{
+        font-size: 25px;
+    }
+    #statsSection .prices-dollar{
+        color: #00C689;
+        font-size: 25px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 650px) {
+    #statsSection .prices-container{
+       grid-template-columns: repeat(2, 1fr);
+       
+    }
+    
+    #statsSection .prices-container div h1{
+        font-size: 20px;
+    }
+    #statsSection .prices-dollar{
+        color: #00C689;
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 460px) {
+    #statsSection .prices-container{
+        grid-template-columns: repeat(1, 1fr);
+        
+     }
+    
+}
