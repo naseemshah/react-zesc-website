@@ -77,7 +77,7 @@
 .rectPat2{
     width: 25px;
     position: relative;
-    margin-top: 0px;
+    top: -35px;
     margin-right: -200%;
 }
 
