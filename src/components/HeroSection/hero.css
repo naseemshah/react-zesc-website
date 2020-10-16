@@ -5,7 +5,7 @@
     flex-direction: column;
     /* justify-content: space-around; */
     align-items: center;
-    padding: 130px 20px 20px 20px;
+    padding: 150px 20px 20px 20px;
     color: white;
 }
 
@@ -95,7 +95,7 @@
         max-height: 250px;
     }
     #HeroSection{
-        padding-top: 70px;
+        padding-top: 150px;
     }
     #HeroSection h1{
         font-size: 28px;

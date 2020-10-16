@@ -12,8 +12,8 @@
 .navbar {
     padding: 10px;
     display: flex;
-    width: 80vw;
-    max-width: 1000px;
+    width: 90vw;
+    max-width: 1200px;
     height: 80px;
     justify-content: space-between;
     align-items: center;
