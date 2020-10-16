@@ -12,11 +12,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <HeroSection />
-        <StatsSection />
-        <CoreFeaturesSection />
-        <TokenomicsSection />
       </header>
+      <HeroSection />
+      <StatsSection />
+      <CoreFeaturesSection />
+      <TokenomicsSection />
     </div>
   );
 }

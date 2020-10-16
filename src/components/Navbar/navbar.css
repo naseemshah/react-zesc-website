@@ -1,15 +1,23 @@
+
+/* .NavContainer{
+    background-color: azure;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+} */
 .navbar {
     padding: 10px;
     display: flex;
     width: 100vw;
+    /* max-width: 1000px; */
     height: 80px;
     justify-content: space-around;
     align-items: center;
     position: fixed;
     top: 0;
     background-color: #0D454A;
+    /* background-color: aqua; */
     z-index: 100;
-
 }
 
 .nav-logo{

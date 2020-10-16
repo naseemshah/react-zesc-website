@@ -14,10 +14,10 @@ function Navbar() {
         setsideBarOpen(!sidebarBtnOpen)
     }
   return (
-    <div>
-        
+    <div className="NavContainer">
 
         <nav className="navbar">
+            
             <div className="nav-logo" >
                 <img src={logo}alt="ZSEC PROTOCOL Logo" ></img>
             </div>

@@ -8,3 +8,9 @@ body{
   background-color: #0D454A;
   font-family: 'Poppins', sans-serif;
 }
+
+body section{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}

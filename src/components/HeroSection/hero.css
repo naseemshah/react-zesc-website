@@ -12,9 +12,10 @@
 #HeroSection h1{
     text-align: center;
     margin: 10px;
-    line-height: 40px;
+    line-height: 35px;
     font-weight: normal;
-    max-width: 80%;
+    max-width: 70%;
+    font-size: 25px;
 }
 
 .hero-image{
@@ -56,6 +57,24 @@
 #HeroSection p{
     text-align: center;
 }
+
+@media screen and (min-width: 1500px) {
+    .hero-image{
+        max-width: 70%;
+        max-height: 400px;
+    }
+    #HeroSection{
+        padding-top: 70px;
+    }
+    #HeroSection h1{
+        font-size: 38px;
+        line-height: 50px;
+    }
+    #HeroSection p{
+        font-size: 12px;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     #HeroSection{
