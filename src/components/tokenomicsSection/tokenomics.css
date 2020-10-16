@@ -2,6 +2,11 @@
     margin-top: 50px;
 }
 
+.rectPat3{
+    position: relative;
+    left: -200px;
+}
+
 #tokenomics-section .tokenomics-heading-container{
     padding: 10px;
     display: flex;

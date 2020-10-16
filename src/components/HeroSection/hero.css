@@ -63,7 +63,20 @@
 }
 
 .heroSectionButtonContainer{
+    margin-top: 15px;
     display: flex;
+}
+
+.rectPat1{
+    position: relative;
+    margin-left: -400px;
+    margin-top: -20;
+}
+
+.rectPat2{
+    position: relative;
+    margin-top: -20px;
+    margin-right: -130%;
 }
 
 #HeroSection p{

@@ -4,6 +4,8 @@ import underlineIcon from "./underline.svg";
 import chartLogo from './chart-logo.svg'
 import { Doughnut } from 'react-chartjs-2';
 import 'chartjs-plugin-deferred';
+import rectPat from './rect-pat.svg'
+
 
 function TokenomicsSection() {
     //Icons
@@ -74,6 +76,13 @@ function TokenomicsSection() {
   return (
         <section id="tokenomics-section">
             <div className="tokenomics-heading-container">
+                <img
+                className="rectPat3"
+                initial={{opacity: 0, y: 50}}
+                animate={{opacity: 1, y: 0}}
+                transition={{ delay:1.2, duration: 1}}
+                src={rectPat} alt="">
+                </img>
                 <h1>Tokenomics</h1>
                 <img src={underlineIcon} alt=''></img>
             </div>

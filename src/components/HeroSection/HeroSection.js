@@ -2,6 +2,7 @@ import React from 'react';
 import './hero.css';
 import heroImage from './hero-image.svg';
 import { motion } from "framer-motion";
+import rectPat from './rect-pat.svg'
 
 
 
@@ -10,6 +11,12 @@ function Navbar() {
 
   return (
         <section id="HeroSection">
+            <motion.img
+            className="rectPat1"
+            initial={{opacity: 0, y: 50}}
+            animate={{opacity: 1, y: 0}}
+            transition={{ delay:0.5, duration: 1}}
+            src={rectPat} alt=""></motion.img>
             <motion.img className="hero-image"
             src={heroImage}
             alt="HeroImage"
@@ -41,6 +48,13 @@ function Navbar() {
                     <button>Uniswap</button>
                     <button>Community</button>
                 </div>
+                <motion.img
+                className="rectPat2"
+                initial={{opacity: 0, y: 50}}
+                animate={{opacity: 1, y: 0}}
+                transition={{ delay:1.2, duration: 1}}
+                src={rectPat} alt=""></motion.img>
+                
             </motion.div>
             
         </section>
