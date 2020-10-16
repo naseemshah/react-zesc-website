@@ -1,4 +1,6 @@
 .sideBar{
+    display: flex;
+    flex-direction: column;
     margin: 0;
     background-color: white;
     position: fixed;
@@ -34,3 +36,17 @@
     text-decoration: none;
     color: black;    
 }
+
+
+
+.sidebar-copyright {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+
+.sidebar-copyright p{
+    margin-top: 10px;
+}
+

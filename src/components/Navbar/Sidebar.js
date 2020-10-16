@@ -1,5 +1,5 @@
 import React from 'react';
-// import {useEffect} from 'react';
+import SocialIcons from '../SocialIcons/SocialIcons' 
 import closeBtn from './closeSidebarBtn.svg'
 import menuItems from './MenuItems';
 import './sidebar.css';
@@ -59,7 +59,15 @@ function Sidebar(props) {
                         }
                     </ul>
                 </div>
-                    
+                <div className="sidebar-copyright">
+                    <div>
+                        <div className="sidebar-social">
+                            <SocialIcons />
+                            <p>© Copyright 2020 ZSEC</p>
+                        </div>
+                        
+                    </div>
+                </div>
             </motion.div>
 
         </AnimatePresence>
