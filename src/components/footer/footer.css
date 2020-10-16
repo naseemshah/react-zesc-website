@@ -1,0 +1,23 @@
+footer{
+    background-color: #104F55;
+    padding: 40px;
+    color: white;
+}
+
+.footer-nav-links-container{
+    display: flex;
+}
+.footer-links-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav-links-container a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px 0 0;
+}
+
+.footer-copyright{
+    margin: 50px 0 0px 0;
+}

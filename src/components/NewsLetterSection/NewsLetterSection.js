@@ -16,7 +16,7 @@ function NewsletterSection() {
                 <input placeholder="Your Email..."></input>
                 <button>Subscribe</button>
            </div>
-           <div class="news-pattern">
+           <div className="news-pattern">
                <img src={rectPat} alt=""></img>
            </div>
         </section>
