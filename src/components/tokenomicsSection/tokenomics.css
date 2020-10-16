@@ -33,6 +33,7 @@
 .chart-logo{
     position: relative;
     bottom: 150px;
+    z-index: -100;
 
 }
 
