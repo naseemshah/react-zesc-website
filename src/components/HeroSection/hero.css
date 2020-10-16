@@ -22,8 +22,15 @@
     max-width: 70%;
     max-height: 250px;
 }
+#HeroSection button:hover{
+    box-sizing: border-box;
+    background: #008f64;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.9);
 
+}
 #HeroSection button{
+    box-sizing: border-box;
     background: #00C689;
     border-radius: 6px;
     border: none;
@@ -42,6 +49,11 @@
     line-height: 26px;
     margin: 10px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 5px 5px 5px 5px rgba(69.75000000000001, 66.1108695652174, 66.1108695652174, 0.82);
+
+    
+
 }
 .heroSectionDescContainer{
     display: flex;
