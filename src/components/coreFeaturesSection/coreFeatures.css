@@ -17,8 +17,17 @@
     flex-direction: column;
     padding: 20px;
     text-align: center;
+    z-index: 1;
+    cursor: pointer;
 
 }
+
+.feature-container:hover{
+    background-color: #00C689!important;
+    transition: all 0.3s ease-in-out;
+}
+
+
 
 #coreFeaturesSection .feature-container p{
     margin: 10px;
