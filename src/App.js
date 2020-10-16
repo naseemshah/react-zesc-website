@@ -5,11 +5,13 @@ import StatsSection from './components/StatsSecition/StatsSection';
 import CoreFeaturesSection from './components/coreFeaturesSection/coreFeaturesSection';
 import TokenomicsSection from './components/tokenomicsSection/TokenomicsSection';
 import NewsletterSection from './components/NewsLetterSection/NewsLetterSection';
-import Footer from './components/footer/Footer'
+import Footer from './components/footer/Footer';
+import { useLax } from 'use-lax';
 import './App.css';
 
 
 function App() {
+  useLax();
   return (
     <div className="App">
       <header className="App-header">

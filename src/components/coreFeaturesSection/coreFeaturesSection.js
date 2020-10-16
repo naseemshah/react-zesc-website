@@ -38,7 +38,7 @@ function CoreFeaturesSection() {
                 {
                     contents.map((item,id)=>{
                         return (
-                            <div className="feature-container" key={id}>
+                            <div className="feature-container lax" data-lax-preset="zoomIn-0.1" data-lax-opacity="0 1, vh 0"  key={id} >
                                 <img src={item.icon} alt={item.title}></img>
                                 <p>{item.title}</p>
                                 <p>{item.desc}</p>

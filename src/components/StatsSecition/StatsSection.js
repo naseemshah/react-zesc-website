@@ -21,7 +21,7 @@ function statsSection() {
     ]
 
   return (
-        <section id="statsSection">
+        <section id="statsSection" className="lax" data-lax-opacity="1 0, (0.5*vh) 1">
             <div className="prices-container">
                 {PricesItems.map((item,id) =>{
                     return (

@@ -3,6 +3,7 @@ import './tokenomics.css';
 import underlineIcon from "./underline.svg";
 import chartLogo from './chart-logo.svg'
 import { Doughnut } from 'react-chartjs-2';
+import 'chartjs-plugin-deferred';
 
 function TokenomicsSection() {
     //Icons
@@ -50,6 +51,11 @@ function TokenomicsSection() {
             legend: {
                 display: false,
             },
+            plugins: {
+                deferred: {
+                    "xOffset": "20%", "delay": 500
+                }
+              }
         },
         datasets: [
             {
@@ -73,7 +79,9 @@ function TokenomicsSection() {
             </div>
             <div className="tokenomics-container">
                 <div className="tokenomics-chart">
-                    <Doughnut 
+                    <Doughnut
+                        className="lax"
+                        data-lax-preset="spin"
                         data={chartData}
                         options={chartData.options}
                         // width={100}
@@ -85,7 +93,7 @@ function TokenomicsSection() {
                         <p>Max. Supply 40,000</p>                        
                     </div>
                 </div>
-                <div className="tokenomics-legends">
+                <div className="tokenomics-legends lax" >
                     <ul>
                     {
                         data.map((item,id)=>{
