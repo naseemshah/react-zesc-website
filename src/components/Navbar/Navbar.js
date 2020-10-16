@@ -8,7 +8,7 @@ import './navbar.css';
 
 
 
-function App() {
+function Navbar() {
     const [sideBarOpen, setsideBarOpen] = useState(false);
     let sidebarBtnClick = (sidebarBtnOpen) => {
         setsideBarOpen(!sidebarBtnOpen)
@@ -55,4 +55,4 @@ function App() {
   );
 }
 
-export default App;
+export default Navbar;
