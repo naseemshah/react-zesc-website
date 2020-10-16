@@ -14,34 +14,39 @@ function Navbar() {
         setsideBarOpen(!sidebarBtnOpen)
     }
   return (
-    <div className="NavContainer">
+    <div>
 
-        <nav className="navbar">
+
+            <div className="NavContainer">
+
+            <nav className="navbar">
+                
+                <div className="nav-logo" >
+                    <img src={logo}alt="ZSEC PROTOCOL Logo" ></img>
+                </div>
+                <div className="nav-list">
+                    <ul>
+                        { menuItems.map((item)=>{
+                            return(
+                            <li key={item.title} className={item.cName}><a  href={item.url}>{item.title}</a></li>
+                            )
+                            })
+                        }
+                    </ul>
+                </div>
+                <div className="sidebarbtn" onClick={()=>{sidebarBtnClick(sideBarOpen)}}>
+                    <img src={sidebarBtn}alt="Side bar"></img>
+                </div>
+                
+            </nav>
             
-            <div className="nav-logo" >
-                <img src={logo}alt="ZSEC PROTOCOL Logo" ></img>
-            </div>
-            <div className="nav-list">
-                <ul>
-                    { menuItems.map((item)=>{
-                        return(
-                        <li key={item.title} className={item.cName}><a  href={item.url}>{item.title}</a></li>
-                        )
-                        })
-                    }
-                </ul>
-            </div>
-            <div className="sidebarbtn" onClick={()=>{sidebarBtnClick(sideBarOpen)}}>
-                <img src={sidebarBtn}alt="Side bar"></img>
-            </div>
-            
-        </nav>
+        </div>
         <div>
         <AnimatePresence>
         { 
             sideBarOpen &&
             
-                <motion.div  key="sidebar" transition={{delay: 0, duration: 0.5}} exit={{ x: "100vw" }}>
+                <motion.div  key="sidebar" transition={{delay: 0, duration: 0.5}} exit={{ position:"fixed", x: "100vw" }}>
                     <Sidebar
                         SidebarStates = {{sideBarOpen, setsideBarOpen}} 
                     />
@@ -52,6 +57,7 @@ function Navbar() {
         
         </div>
     </div>
+
   );
 }
 
