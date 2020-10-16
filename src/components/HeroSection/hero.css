@@ -3,16 +3,16 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 90px;
+    padding: 90px 20px 20px 20px;
     color: white;
 }
 
 #HeroSection h1{
     text-align: center;
     margin: 10px;
-    line-height: 50px;
+    line-height: 40px;
     font-weight: normal;
     max-width: 80%;
 }
@@ -41,7 +41,62 @@
     line-height: 26px;
     margin: 10px;
 }
+.heroSectionDescContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .heroSectionButtonContainer{
     display: flex;
 }
+
+#HeroSection p{
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #HeroSection{
+        padding-top: 60px;
+    }
+    #HeroSection h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #HeroSection p{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    #HeroSection h1{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #HeroSection p{
+        font-size: 11px;
+    }
+    .hero-image{
+        max-width: 80%;
+        max-height: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 460px) {
+    #HeroSection h1{
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 95%;
+    }
+    #HeroSection p{
+        font-size: 11px;
+    }
+    .hero-image{
+        max-width: 90%;
+        max-height: 250px;
+    }
+}
+
