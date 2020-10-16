@@ -11,11 +11,15 @@
     box-sizing: border-box;
 }
 
+#coreFeaturesSection .feature-container h2{
+    font-weight: 500;
+    font-size: 16px;
+}
 #coreFeaturesSection .feature-container{
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     z-index: 1;
     cursor: pointer;

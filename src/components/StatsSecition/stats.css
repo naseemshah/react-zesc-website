@@ -23,6 +23,9 @@
     
     
 }
+#statsSection .prices-container div h2{
+    font-weight: 400;
+}
 
 #statsSection .prices-dollar{
     color: #00C689;
@@ -30,7 +33,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    #statsSection .prices-container div h1{
+    #statsSection .prices-container div h2{
         font-size: 25px;
     }
     #statsSection .prices-dollar{
@@ -44,11 +47,11 @@
 
 @media screen and (max-width: 650px) {
     #statsSection .prices-container{
-       grid-template-columns: repeat(2, 1fr);
+       grid-template-columns: repeat(1, 1fr);
        
     }
     
-    #statsSection .prices-container div h1{
+    #statsSection .prices-container div h2{
         font-size: 20px;
     }
     #statsSection .prices-dollar{

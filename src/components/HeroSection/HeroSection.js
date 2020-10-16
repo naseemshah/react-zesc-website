@@ -11,12 +11,7 @@ function Navbar() {
 
   return (
         <section id="HeroSection">
-            <motion.img
-            className="rectPat1"
-            initial={{opacity: 0, y: 50}}
-            animate={{opacity: 1, y: 0}}
-            transition={{ delay:0.5, duration: 1}}
-            src={rectPat} alt=""></motion.img>
+           
             <motion.img className="hero-image"
             src={heroImage}
             alt="HeroImage"
@@ -29,7 +24,7 @@ function Navbar() {
                 animate={{opacity: 1, y: 0}}
                 transition={{ delay:1, duration: 1}}
             >ZSEC protocol is the world’s first E-commerce project
-            combining yield farming,staking with deflationary
+            combining yield farming, staking with deflationary
             components in a DEFI ecosystem.
             </motion.h1>
             <motion.p

@@ -5,6 +5,9 @@ import chartLogo from './chart-logo.svg'
 import { Doughnut } from 'react-chartjs-2';
 import 'chartjs-plugin-deferred';
 import rectPat from './rect-pat.svg'
+import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+
 
 
 function TokenomicsSection() {
@@ -72,9 +75,16 @@ function TokenomicsSection() {
             }
         ]
     }
-   
+    
+    const { ref, inView } = useInView({
+        threshold: 0,
+      });
+
   return (
-        <section id="tokenomics-section">
+      <div ref={ref}>
+          
+          {inView && 
+          <motion.section transition={{delay: 0.5, duration: 1}} initial={{opacity:0}} animate={{opacity: 1}} id="tokenomics-section">
             <div className="tokenomics-heading-container">
                 <img
                 className="rectPat3"
@@ -122,7 +132,11 @@ function TokenomicsSection() {
                 </div>
             </div>
            
-        </section>
+        </motion.section>
+        }
+
+      </div>
+        
   );
 }
 

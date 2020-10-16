@@ -1,9 +1,16 @@
 import React from 'react';
 import './coreFeatures.css';
 import underlineIcon from "./underline.svg";
+import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+
 
 
 function CoreFeaturesSection() {
+    const { ref, inView } = useInView({
+        threshold: 0,
+      });
+      
     //Icons
     let contents = [
         {
@@ -29,25 +36,37 @@ function CoreFeaturesSection() {
     ]
    
   return (
-        <section id="coreFeaturesSection">
-            <div className="core-features-heading-container">
-                <h1>Core Features</h1>
-                <img src={underlineIcon} alt=''></img>
-            </div>
-            <div className="core-features-contents">
-                {
-                    contents.map((item,id)=>{
-                        return (
-                            <div className="feature-container lax" data-lax-preset="zoomIn-0.1" data-lax-opacity="0 1, vh 0"  key={id} >
-                                <img src={item.icon} alt={item.title}></img>
-                                <p>{item.title}</p>
-                                <p>{item.desc}</p>
-                            </div>
-                        )
-                    })
-                }                
-            </div>
+        <section ref={ref} id="coreFeaturesSection">
+            { inView &&
+            
+            
+            <motion.div
+                transition={{delay: 0.5, duration: 1}}
+                initial={{opacity:0, y: 50}}
+                animate={{opacity: 1, y: 0}}          
+            >
 
+                <div className="core-features-heading-container">
+                    <h1>Core Features</h1>
+                    <img src={underlineIcon} alt=''></img>
+                </div>
+                <div className="core-features-contents">
+                    {
+                        contents.map((item,id)=>{
+                            return (
+
+                                    <div  className="feature-container lax" data-lax-preset="zoomIn-0.1" data-lax-opacity="0 1, vh 0"  key={id} >
+                                        <img src={item.icon} alt={item.title}></img>
+                                        <h2>{item.title}</h2>
+                                        <p>{item.desc}</p>
+                                    </div>
+
+                                )
+                        })
+                    }                
+                </div>
+            </motion.div>
+            }
         </section>
   );
 }

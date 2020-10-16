@@ -15,10 +15,9 @@
     width: 80vw;
     max-width: 1000px;
     height: 80px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     
-    background-color: #0D454A;
     /* background-color: aqua; */
     
 }
@@ -31,20 +30,19 @@
 }
 
 .nav-list{
-    /* justify-self: end; */
-    width: 800px;
-    justify-self: flex-end;
     transition: all 0.5s ease-in-out;
     color: white;
 
 }
 .nav-list ul{
+    
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     list-style: none;
     
 }
 .nav-list ul a{
+    margin: 14px;
     text-decoration: none;
     color: white;
 }
