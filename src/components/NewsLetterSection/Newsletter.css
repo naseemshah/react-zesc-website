@@ -31,6 +31,10 @@
 
 }
 
+.formMessage{
+    margin: 30px;
+}
+
 .news-input-container button{
     position: absolute;
     top: 10px;
