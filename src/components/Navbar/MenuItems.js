@@ -11,7 +11,7 @@ let menuItems = [
     },
     {
         title: "Whitepaper",
-        url: "#",
+        url: "/onepager_ZSEC.pdf",
         cName: "nav-links"
     },{
         title: "Stake",
