@@ -8,7 +8,6 @@ import rectPat from './rect-pat.svg'
 
 
 function Navbar() {
-    let key= process.env.REACT_APP_NOT_SECRET_CODE;
 
 
   return (
@@ -27,7 +26,7 @@ function Navbar() {
                 transition={{ delay:1, duration: 1}}
             >ZSEC protocol is the world’s first E-commerce project
             combining yield farming, staking with deflationary
-            components in a DEFI ecosystem. {key}
+            components in a DEFI ecosystem.
             
             </motion.h1>
             <motion.p
