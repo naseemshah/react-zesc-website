@@ -19,7 +19,7 @@ function NewsletterSection() {
         setisSending(true);
         e.preventDefault();
     
-        emailjs.sendForm('service_wq6qi4o', 'template_r42rb9n', e.target, 'user_cpsp7zkNQPoOzcoqiGUhA')
+        emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,process.env.REACT_APP_EMAILJS_TM_ID,e.target, process.env.REACT_APP_EMAILJS_USER_ID)
           .then((result) => {
             setisSending(false);
             setmessage("Thank you! We have sucessfully recieved you email!");
