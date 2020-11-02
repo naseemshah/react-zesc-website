@@ -6,7 +6,7 @@ let menuItems = [
     },
     {
         title: "Uniswap",
-        url: "#",
+        url: "https://info.uniswap.org/token/0xedb3f8b53cd2f3bddb4063db759c274793b65ef1",
         cName: "nav-links"
     },
     {

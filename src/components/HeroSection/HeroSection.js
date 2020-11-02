@@ -42,7 +42,12 @@ function Navbar() {
                 transition={{ delay:1.2, duration: 1}}
             >
                 <div className="heroSectionButtonContainer">
-                    <button>Uniswap</button>
+                    <button 
+                   ><a  onClick={(e) => {
+                    window.open("https://info.uniswap.org/token/0xedb3f8b53cd2f3bddb4063db759c274793b65ef1",
+                      "_blank"
+                    );
+                  }}>Uniswap</a></button>
                     <button>Community</button>
                 </div>
                 <motion.img
