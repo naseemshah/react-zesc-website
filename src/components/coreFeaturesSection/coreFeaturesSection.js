@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 function CoreFeaturesSection() {
     const { ref, inView } = useInView({
         threshold: 0,
+        triggerOnce: true
       });
       
     //Icons

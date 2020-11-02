@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './tokenomics.css';
 import underlineIcon from "./underline.svg";
 import chartLogo from './chart-logo.svg'
@@ -44,6 +44,7 @@ function TokenomicsSection() {
     let dataLables = []
     let colors = ['#00C689c9','#00C689c9','#2CE2AAc9','#46EBB8c9','#49FFC7c9','#79FFD6c9','#46EBB8'];
     let colorsHover = ['#00C689','#2CE2AA','#46EBB8','#49FFC7','#79FFD6','#46EBB8'];
+    let [visited,setVisted] = useState(false);
 
     data.forEach(item =>{
         dataValues.push(item.value);
@@ -76,14 +77,16 @@ function TokenomicsSection() {
         ]
     }
     
+    
     const { ref, inView } = useInView({
         threshold: 0,
+        triggerOnce: true
       });
 
   return (
       <div ref={ref}>
           
-          {inView && 
+          { inView && 
           <motion.section transition={{delay: 0.5, duration: 1}} initial={{opacity:0}} animate={{opacity: 1}} id="tokenomics-section">
             <div className="tokenomics-heading-container">
                 <img
