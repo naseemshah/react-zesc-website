@@ -4,7 +4,7 @@ import underlineIcon from "../coreFeaturesSection/underline.svg";
 import InView, { useInView } from 'react-intersection-observer';
 import { motion } from "framer-motion";
 import q42020image from './q4-2020.svg';
-import q12021image from './q4-2020.svg';
+import q12021image from './q1-2021.svg';
 
 
 
